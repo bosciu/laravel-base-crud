@@ -45,12 +45,13 @@ class ComicController extends Controller
      * @param  \App\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function show(Comic $id)
+    public function show($slug)
     {
-        // return view("comics.show", compact('comic')); metodo rapido, sta facendo $comic = Comic::findOrFail($id)
+        // return view("comics.show", compact('comic')); metodo rapido, sta facendo $comic = Comic::findOrFail($id), ma nei parametri della funzione show deve esserci Comic $comic
 
-        $comic = Comic::where('id', $id)->firstOrFail();
+        $comic = Comic::where('slug', $slug)->firstOrFail();
         return view('comics.show', compact('comic'));
+        
     }
 
     /**

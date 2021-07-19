@@ -24,7 +24,7 @@
                 <th scope="row">{{$comic->id}}</th>
                 <td>{{$comic->title}}</td>
                 <td>{{$comic->price}}</td>
-                <td><a class="btn btn-primary" href="{{route('comics.show', $comic->id)}}" role="button">APRI</a></td>
+                <td><a class="btn btn-primary" href="{{route('comics.show', $comic->slug)}}" role="button">APRI</a></td>
                 <td><a class="btn btn-warning" href="#" role="button">MODIFICA</a></td>
                 <td><a class="btn btn-danger" href="#" role="button">CANCELLA</a></td>
               </tr>
