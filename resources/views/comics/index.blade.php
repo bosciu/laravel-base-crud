@@ -2,7 +2,7 @@
 
 @section('asset')
     @parent
-    <link rel="stylesheet" href="css/comics_index.css">
+    <link rel="stylesheet" href="{{asset('css/comics_index.css')}}">
 @endsection
 
 @section('title', 'Fumetti')

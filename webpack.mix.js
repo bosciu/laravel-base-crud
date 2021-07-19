@@ -14,4 +14,5 @@ const mix = require("laravel-mix");
 mix.js("resources/js/app.js", "public/js")
     .sass("resources/sass/app.scss", "public/css")
     .sass("resources/sass/views/homepage.scss", "public/css")
-    .sass("resources/sass/views/comics_index.scss", "public/css");
+    .sass("resources/sass/views/comics_index.scss", "public/css")
+    .sass("resources/sass/views/comics_show.scss", "public/css");
