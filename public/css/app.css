@@ -9,10 +9,20 @@ body {
 }
 
 header {
-  color: red;
+  font-size: 22px;
+}
+
+header li.nav-item {
+  margin: 0 10px;
 }
 
 footer {
-  color: yellow;
+  padding: 20px;
+  color: white;
+  background-color: #212529;
+}
+
+footer h1 {
+  font-size: 18px;
 }
 

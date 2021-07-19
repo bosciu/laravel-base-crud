@@ -1,3 +1,3 @@
-<footer>
-    <h1>Footer</h1>
+<footer class="text-center">
+    <h1>DC Comics made by Gianni Bertolini</h1>
 </footer>
