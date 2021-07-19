@@ -14,7 +14,7 @@ class ComicController extends Controller
      */
     public function index()
     {
-        $comics = Comic::all();
+        $comics = Comic::paginate(6);
         return view('comics.index', compact('comics'));
     }
 
@@ -45,9 +45,12 @@ class ComicController extends Controller
      * @param  \App\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function show(Comic $comic)
+    public function show(Comic $id)
     {
-        //
+        // return view("comics.show", compact('comic')); metodo rapido, sta facendo $comic = Comic::findOrFail($id)
+
+        $comic = Comic::where('id', $id)->firstOrFail();
+        return view('comics.show', compact('comic'));
     }
 
     /**
