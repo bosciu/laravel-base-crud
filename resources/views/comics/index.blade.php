@@ -25,7 +25,7 @@
                 <td>{{$comic->title}}</td>
                 <td>{{$comic->price}} €</td>
                 <td><a class="btn btn-primary" href="{{route('comics.show', $comic->slug)}}" role="button">APRI</a></td>
-                <td><a class="btn btn-warning" href="#" role="button">MODIFICA</a></td>
+                <td><a class="btn btn-warning" href="{{route('comics.edit', $comic->id)}}" role="button">MODIFICA</a></td>
                 <td><a class="btn btn-danger" href="#" role="button">CANCELLA</a></td>
               </tr>
               @endforeach
