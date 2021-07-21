@@ -32,7 +32,7 @@
                 <td><a class="btn btn-primary" href="{{route('comics.show', $comic->slug)}}" role="button">APRI</a></td>
                 <td><a class="btn btn-warning" href="{{route('comics.edit', $comic->id)}}" role="button">MODIFICA</a></td>
                 <td>
-                  <form action="{{route('comics.destroy', $comic)}}" method="post" onsubmit="return confirm('Vuoi cancellare?')">
+                  <form action="{{route('comics.destroy', $comic)}}" method="post" onSubmit="return confirm('Vuoi cancellare \'{{$comic->title}}\'?')">
                     @csrf
                     @method('delete')
                       <button type="submit" class="btn btn-danger">CANCELLA</button>
