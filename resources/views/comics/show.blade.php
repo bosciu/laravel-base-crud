@@ -11,6 +11,8 @@
     <div class="container d-flex" id='comic'>
         <div class="img-container">
             <img src="{{$comic->thumb}}" alt="{{$comic->title}}">
+            <a class="btn btn-primary my-2" href="{{route('comics.index')}}" role="button">Torna alla lista</a>
+            <a class="btn btn-warning my-2" href="{{route('comics.edit', $comic)}}" role="button">Modifica</a>
         </div>
         <div id="comic-information">
             <h1>{{$comic->title}}</h1>

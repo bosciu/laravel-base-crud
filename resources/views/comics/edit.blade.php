@@ -41,6 +41,8 @@
                 <input type="text" class="form-control" id="type" name="type" value="type">
               </div>
             <button type="submit" class="btn btn-primary">Salva</button>
+            <a class="btn btn-secondary" href="{{route('comics.show', $comic->slug)}}" role="button">Indietro</a>
           </form>
+          <a class="btn btn-primary mt-4" href="{{route('comics.index')}}" role="button">Torna alla lista</a>
     </div>
 @endsection
